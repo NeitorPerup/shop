@@ -1,6 +1,12 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
 body{
 	position: relative;
-	width: 99%;
+	width: 98vw;
 	height: 100%;
 	max-width: 1400px;
 	margin:0px;
@@ -12,11 +18,6 @@ html{
 	height:100vh;
 }
 
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-}
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
@@ -31,12 +32,14 @@ button{
 	cursor:pointer;
 }
 
+
+
 /* container
 ================ */
 
 .container {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -46,6 +49,13 @@ button{
 .header{
 	position: relative;
 	padding-top: 20px;
+	width:90%;
+}
+
+@media (max-width: 1300px){
+	.header{
+		width:100%;
+	}
 }
 
 .header__info{
@@ -60,6 +70,7 @@ button{
 	/* or 22px */
 
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
 
 	/* #666666 */
@@ -126,6 +137,7 @@ button{
 
 .headline{
 	margin-top: 40px;
+	width: 100%;
 }
 
 .headline__inner{
@@ -165,7 +177,7 @@ button{
 
 .headline__a{
 	margin-top: 10px;
-	margin-left: 45px;
+	margin-left: 42px;
 	position: relative;
 }
 
@@ -250,12 +262,12 @@ button{
 }
 
 .logotip{
-	width:841px;
+	width:850px;
 	height:530px;
 	margin-left: 30px;
 	background: url(img/banners/logo.png) center no-repeat;
 	position:relative;
-	left:43px;
+	left:30px;
 	z-index: 10;
 }
 
