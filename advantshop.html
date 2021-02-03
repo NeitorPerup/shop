@@ -10,9 +10,7 @@
 <header class="header">
     <div class="container">
         <div class="header__info">
-           <svg class = "header__path" width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-			<path d="M-1 6.71138L4.28919 8.03368C4.64747 8.12325 4.92722 8.403 5.01679 8.76129L6.33909 14.0505L12.9443 0.106201L-1 6.71138Z" fill="#666666"/>
-			</svg>
+           <img src="img/vectors/Path.png">
 
           <span class = "sp">Москва</span>
           <span class = "sp">8 800 550 83 13 заказать звонок</span>
@@ -115,9 +113,20 @@
 				<form>
 					<h3>Опрос</h3>
 					<h4>Как вам новый дизайн?</h4>
-					<p class = "survey__answer"><input type="radio" name="answer" value="a1">Очень удобно!<Br>
-					<input type="radio" name="answer" value="a2">Не пользуюсь, хватает одной темы<Br>
-					<input type="radio" name="answer" value="a3">Что такое трансформер?</p>
+					<div class = "survey__answer">
+						<div class = "survey__fix">
+							<input class="survey__input" type="radio" name="answer" value="a1">
+							<div class="survey__form"><span>Очень удобно!</span></div>
+						</div>	
+						<div class = "survey__fix">
+							<input class="survey__input" type="radio" name="answer" value="a2">
+							<div class="survey__form"><span>Не пользуюсь, хватает одной темы</span></div>
+						</div>
+						<div class = "survey__fix">
+							<input class="survey__input" type="radio" name="answer" value="a3">
+							<div class="survey__form"><span>Что такое трансформер?</span></div>
+						</div>							
+					</div>										
 					<button class = "button">Голосовать</button>
 			</div>
 			<div class="advk">
