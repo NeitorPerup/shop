@@ -522,14 +522,25 @@ button{
 	width: calc(100% / 3);
 	height: 240px;
 	align-items: center;
+	display:block;
+	padding: 20px;
+	overflow: hidden;
 }
 
 .popular__category:hover{
 	border: 1px solid #2D9CEE;
 }
 
-.category__fix{
-	margin-top:30%;
+.category__img{
+	height:150px;
+	max-width: 180px;
+	object-fit: contain;
+}
+
+.category__ramka{
+	float: left; 
+	margin-right: 10px; 
+	margin-bottom: 10px;
 }
 
 .category__name{
