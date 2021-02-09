@@ -5,10 +5,10 @@ using System.Linq;
 
 namespace Advantshop
 {
-    public partial class Model1 : DbContext
+    public partial class ModelDb : DbContext
     {
-        public Model1()
-            : base("name=Model1")
+        public ModelDb()
+            : base("name=ModelDb")
         {
         }
 

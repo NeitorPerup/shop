@@ -259,12 +259,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Model1.cs" />
-    <Compile Include="ModelCF.cs">
-      <CustomToolNamespace>ModelDbCF</CustomToolNamespace>
+    <Compile Include="ModelDb.cs">
+      <CustomToolNamespace>ModelDb</CustomToolNamespace>
     </Compile>
-    <Compile Include="Models\Category.cs" />
-    <Compile Include="Models\Product.cs" />
     <Compile Include="Product.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
@@ -359,6 +356,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
