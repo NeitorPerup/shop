@@ -6,7 +6,6 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 using System.Data.Entity;
-using Advantshop.Models;
 
 namespace Advantshop
 {
@@ -14,7 +13,6 @@ namespace Advantshop
     {
         protected void Application_Start()
         {
-            Database.SetInitializer(new ShopDbInitializer());
 
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);

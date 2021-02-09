@@ -9,15 +9,20 @@ namespace Advantshop.Controllers
 {
     public class HomeController : Controller
     {
-        ShopContext db = new ShopContext();
+        readonly ModelCF db = new ModelCF();
+
+        readonly AdvantshopEntities bd = new AdvantshopEntities();
+
+        readonly Model1 database = new Model1();
 
         public ActionResult Index()
         {
-            // получаем из бд все объекты Book
-            IEnumerable<Category> categorys = db.Categorys;
-            // передаем все объекты в динамическое свойство Books в ViewBag
-            ViewBag.Categorys = categorys;
-            // возвращаем представление
+            IEnumerable<Product> product = database.Product;
+            IEnumerable<Category> ctg = database.Category;
+
+            ViewBag.Category = ctg;
+            ViewBag.Product = product;
+            
             return View();
         }
     }

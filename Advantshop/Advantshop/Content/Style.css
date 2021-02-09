@@ -525,11 +525,12 @@ button {
     display: block;
     padding: 20px;
     overflow: hidden;
+    padding-left: 60px;
 }
 
-.popular__category:hover {
-    border: 1px solid #2D9CEE;
-}
+    .popular__category:hover {
+        border: 1px solid #2D9CEE;
+    }
 
 .category__img {
     height: 150px;
@@ -571,8 +572,10 @@ button {
 
 .product__img {
     margin-bottom: 20px;
-    height: 200px;
-    max-width: 300px;
+    height: 150px;
+    max-width: 180px;
+    object-fit: contain;
+    margin-left: 20px;
 }
 
 .product__description {
