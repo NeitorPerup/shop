@@ -1,0 +1,12 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    <h3>Ну чё, работает? =)</h3>
+    <img src="@ViewBag.ProductUrl"/>
+    <h5>@Session["OrderNumber"]  @ViewBag.Name за @Session["OrderCost"] руб.</h5>
+    <h5>@Session["name"], спасибо за покупку</h5>
+    <asp:Button Width ="50px" Height ="50px"></asp:ButtonWidth>
+</div>
+

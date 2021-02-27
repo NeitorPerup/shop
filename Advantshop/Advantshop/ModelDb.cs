@@ -2,6 +2,7 @@ using System;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 using System.Linq;
+using Advantshop.Models;
 
 namespace Advantshop
 {
@@ -14,6 +15,8 @@ namespace Advantshop
 
         public virtual DbSet<Category> Category { get; set; }
         public virtual DbSet<Product> Product { get; set; }
+
+        public virtual DbSet<Order> Order { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

@@ -1,43 +1,119 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - приложение ASP.NET</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="~/Content/Style.css">
+    <title>Advantshop</title>
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <header class="header">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Имя приложения", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Домашняя страница", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Информация", "About", "Home")</li>
-                    <li>@Html.ActionLink("Связаться", "Contact", "Home")</li>
-                </ul>
+            <div class="header__info">
+                <img src="~/img/vectors/Path.png">
+
+                <span class="sp">Москва</span>
+                <span class="sp">8 800 550 83 13 заказать звонок</span>
+                <a class="enter">Вход и регистрация</a>
             </div>
         </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - мое приложение ASP.NET</p>
-        </footer>
+
+
+        <div class="intro">
+            <div class="container">
+                <div class="intro__inner">
+                    <div class="intro__head">
+                        <span class="intro__advantshop">Advantshop</span>
+                        <input type="text" placeholder="Поиск по товарам" class="intro__input">
+                    </div>
+                    <div class="intro__vector">
+                        <img src="~/img/vectors/heart.jpg">
+                        <img src="~/img/vectors/compare.png">
+                        <img src="~/img/vectors/basket.png">
+                        <a class="intro__a" href="/Home/Busket">Корзина</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="headline">
+            <div class="container">
+                <div class="headline__inner">
+                    <div class="catalog">
+                        <img src="~/img/vectors/burger.png" class="headline__img">
+                        <a class="headline__catalog">Каталог товаров</a>
+                    </div>
+                    <div class="headline__info">
+                        <div class="dropdown">
+                            <button class="dropbtn">О магазине</button>
+                            <div class="dropdown-content">
+                                <a href="#">Возможности</a>
+                                <a href="#">Цены</a>
+                                <a href="#">Партнёры</a>
+                                <a href="#">Шаблоны</a>
+                                <a href="#">Модули</a>
+                                <a href="#">Услуги</a>
+                                <a href="#">Интеграции</a>
+                            </div>
+                        </div>
+                        <a class="headline__a">Скидки</a>
+                        <a class="headline__a">Доставка и оплата</a>
+                        <a class="headline__a">Услуги</a>
+                        <a class="headline__a">Акции</a>
+                        <a class="headline__a">Блог</a>
+                        <a class="headline__a">Контакты</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    @RenderBody()
+
+
+    <div class="basement">
+        <div class="basement__catalog basement__grid">
+            <span>Каталог</span>
+            <a class="basement__a" href="">Телефоны</a>
+            <a class="basement__a" href="">Техника</a>
+            <a class="basement__a" href="">Одежда/обувь</a>
+            <a class="basement__a" href="">Детские товары</a>
+            <a class="basement__a" href="">Цветы</a>
+            <a class="basement__a" href="">Еда/напитки</a>
+        </div>
+        <div class="basement__info basement__grid">
+            <span>Информация</span>
+            <a class="basement__a" href="">О магазине</a>
+            <a class="basement__a" href="">Бренды</a>
+            <a class="basement__a" href="">Доставка и оплата</a>
+            <a class="basement__a" href="">Блог</a>
+            <a class="basement__a" href="">Бонусная программа</a>
+            <a class="basement__a" href="">Контакты</a>
+        </div>
+        <div class="basement__privateOffice basement__grid">
+            <span>Личный кабинет</span>
+            <a class="basement__a" href="">Вход</a>
+            <a class="basement__a" href="">Регистрация</a>
+            <a class="basement__a" href="">Забыли пароль?</a>
+        </div>
+        <div class="basement__privateOffice basement__grid">
+            <span>Мы в социальных сетях</span>
+            <a class="basement__a" href="">Вконтакте</a>
+            <a class="basement__a" href="">Фейсбук</a>
+            <a class="basement__a" href="">Твиттер</a>
+        </div>
+        <img src="~/img/basement/sertificut.png">
     </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+    <div class="footer__info">
+        <span class="footer__name">©2020AdvantShop</span>
+        <img src="~/img/platezhki/paypal.png">
+        <img src="~/img/platezhki/image.png">
+        <img src="~/img/platezhki/card-mastercard.png">
+        <img src="~/img/platezhki/card-visa.png">
+        <img src="~/img/platezhki/card-mir.png">
+        <a class="footer__a" href="">Лицензионное соглашение</a>
+        <a class="footer__a" href="">Политика конфиденциальности</a>
+    </div>
 </body>
 </html>

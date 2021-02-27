@@ -1,0 +1,23 @@
+namespace Advantshop
+{
+    using System;
+    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
+    using System.Data.Entity.Spatial;
+
+    [Table("Customers.CustomerCoupon")]
+    public partial class CustomerCoupon
+    {
+        [Key]
+        [Column(Order = 0)]
+        public Guid CustomerID { get; set; }
+
+        [Key]
+        [Column(Order = 1)]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public int CouponID { get; set; }
+
+        public virtual Coupon Coupon { get; set; }
+    }
+}
